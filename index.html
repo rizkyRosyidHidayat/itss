@@ -5,6 +5,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
   <!-- <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet"> -->
 	<!-- <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/> -->
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>ITSS</title>
 </head>
@@ -21,8 +22,8 @@
 					<a href="" class="nav-link">Fitur</a>
 					<a href="" class="nav-link">Kampus</a>
 					<a href="" class="nav-link">Program Studi</a>
-					<a href="" class="nav-link">
-						<button class="btn orange dark">LOGIN</button>
+					<a href="javascript:void(0)" class="nav-link">
+						<button id="btnLogin" class="btn orange dark">LOGIN</button>
 					</a>
 					<a href="" class="nav-link">
 						<button class="btn btn-icon lightblue dark">
@@ -63,35 +64,81 @@
 
 	<section class="ptn">
 		<div class="container">
-			<div class="card-body lightblue lighten">
-				<div class="row">
-					<div class="col md-2">
-						<img src="img/ugm.jpg" alt="ptn" width="100%" />
-					</div>
-					<div class="col md-2">
-						<img src="img/ugm.jpg" alt="ptn" width="100%" />
-					</div>
-					<div class="col md-2">
-						<img src="img/ugm.jpg" alt="ptn" width="100%" />
-					</div>
-					<div class="col md-2">
-						<img src="img/ugm.jpg" alt="ptn" width="100%" />
-					</div>
-					<div class="col md-2">
-						<img src="img/ugm.jpg" alt="ptn" width="100%" />
-					</div>
-					<div class="col md-2">
-						<img src="img/ugm.jpg" alt="ptn" width="100%" />
-					</div>
-					<div class="col md-2">
-						<img src="img/ugm.jpg" alt="ptn" width="100%" />
-					</div>
-					<div class="col md-2">
-						<img src="img/ugm.jpg" alt="ptn" width="100%" />
+			<div class="card-body lightblue lighten pb-0">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/ptn/ugm.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/ipb.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/itb.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/its.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/ui.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/unair.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/undip.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/unesa.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/unibraw.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/unpad.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/uns.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/unsoed.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/unsolo.png" alt="ptn" width="100%" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/ptn/uny.png" alt="ptn" width="100%" />
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- <div class="carousel lightblue lighten">
+			<div class="carousel-slide">
+				<img src="img/ptn/ugm.png" alt="ptn" width="100%" />
+			</div>
+			<div class="carousel-slide">
+				<img src="img/ptn/ugm.png" alt="ptn" width="100%" />
+			</div>
+			<div class="carousel-slide">
+				<img src="img/ptn/ugm.png" alt="ptn" width="100%" />
+			</div>
+			<div class="carousel-slide">
+				<img src="img/ptn/ugm.png" alt="ptn" width="100%" />
+			</div>
+			<div class="carousel-slide">
+				<img src="img/ptn/ugm.png" alt="ptn" width="100%" />
+			</div>
+			<div class="carousel-slide">
+				<img src="img/ptn/ugm.png" alt="ptn" width="100%" />
+			</div>
+			<div class="carousel-slide">
+				<img src="img/ptn/ugm.png" alt="ptn" width="100%" />
+			</div>
+			<div class="carousel-slide">
+				<img src="img/ptn/ugm.png" alt="ptn" width="100%" />
+			</div>
+		</div> -->
 	</section>
 
 	<section class="fitur mb-4">
@@ -455,7 +502,7 @@
 				<div class="col md-4">
 					<div class="title text-grey mb-2">Support System by:</div>
 					<img src="img/logo.png" alt="logo" height="40" class="mr-3" />
-					<img src="img/logo.png" alt="logo" height="40" />
+					<img src="img/9.png" alt="logo" height="40" />
 				</div>
 				<div class="col md-4">
 					<div class="title text-grey mb-2">Link Partner:</div>
@@ -557,76 +604,67 @@
 		<img src="img/icon/top.svg" alt="icon-top" width="24" />
 	</button>
 
+	<section class="modal">
+		<div class="card">
+			<div class="card-body d-flex justify-between">
+				<div class="title">Login</div>
+				<a href="javascript:void(0)" id="closeModal">
+					<img src="img/icon/close.svg" alt="icon-close" height="24" />
+				</a>
+			</div>
+			<form>
+				<div class="card-body pb-0">
+					<div class="form-control">
+						<input 
+							type="text" 
+							name="hp" 
+							placeholder="No. HP/WA (sebagai username)"
+							required />
+					</div>
+					<div class="form-control">
+						<input 
+							type="password" 
+							name="password" 
+							placeholder="Password"
+							required />
+					</div>
+				</div>
+				<div class="card-body">
+					<button class="btn btn-primary btn-large rounded btn-block dark">
+						LOGIN
+					</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<script src="js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
 	<script>
-		// header
-		var header = document.querySelector('#header')
-
-		// show year
-		var tahun = new Date().getFullYear()
-		var doc = document.querySelector('#tahun')
-		doc.textContent = tahun
-
-		//hidden menu
-		var hiddenMenu = document.querySelector('#hiddenMenu')
-
-		var showBtn = document.querySelector('#showHiddenMenu')
-		showBtn.addEventListener('click', function () {
-			hiddenMenu.style.display = 'block'
-		})
-
-		var closeBtn = document.querySelector('#closeHiddenMenu')
-		closeBtn.addEventListener('click', function () {
-			hiddenMenu.style.display = 'none'
-		})
-
-		// back to top
-		mybutton = document.getElementById("backToTop");
-
-		window.onscroll = function() {scrollFunction()};
-
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		    header.style.cssText = "background-color: #fff; box-shadow: 0 0 5px grey; color: #000;padding: 0;"
-		    mybutton.style.display = "block";
-		  } else {
-		    header.style.cssText = "background-color: transparent; color: #fff;padding: 32px 0;"
-		    mybutton.style.display = "none";
-		  }
-		}
-
-		mybutton.addEventListener('click', function () {
-		  document.body.scrollTop = 0; // For Safari
-		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		})
-
-		// slideshow
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("dot");
-		  if (n > slides.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-		      slides[i].style.display = "none";
-		  }
-		  for (i = 0; i < dots.length; i++) {
-		      dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "flex";
-		  dots[slideIndex-1].className += " active";		  
-		}
-	</script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 7,
+      spaceBetween: 24,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      }
+    });
+  </script>
 
 </body>
 </html>

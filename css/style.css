@@ -65,6 +65,8 @@ body{
 .mr-3{ margin-right: .75rem; }
 .mt-3{ margin-top: .75rem; }
 
+.pb-0{ padding-bottom: 0px !important; }
+
 /*button*/
 .btn{
 	outline: none;
@@ -114,6 +116,7 @@ body{
 /*flex*/
 .d-flex{ display: flex; }
 .justify-end{ justify-content: flex-end; }
+.justify-between{ justify-content: space-between; }
 
 /*list*/
 .list{
@@ -162,6 +165,25 @@ input{
 /*display*/
 .d-sm-none{ display: block; }
 
+/*modal*/
+.modal{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 101;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+.modal .card{
+	box-shadow: 0 0 10px #000;
+	width: 500px;
+}
+
 /*-----------------*/
 header{	
 	position: fixed;
@@ -171,6 +193,7 @@ header{
 	transition: all 0.3s ease;
 	color: #fff;
 	padding: 32px 0;
+	z-index: 99;
 }
 header .container{ width: 90%; }
 .navbar{
@@ -207,7 +230,11 @@ header .container{ width: 90%; }
 	padding-top: 64px;
 }
 
-.ptn{ margin: 64px 0; }
+.ptn{ 
+	margin: 64px 0;
+	display: flex;
+	justify-content: center; 
+}
 
 .fitur{ margin-top: 0px; }
 
@@ -345,4 +372,9 @@ footer .btn-icon img{
 	.avatar{ justify-content: center; }
 	.formulir{ margin: 32px 0; }
 	footer li{ margin-left: 16px; }
+	.modal .card{ width: 100%; }
+}
+
+@media screen and (min-height: 650px){
+	.banner{ background-size: 70%; }
 }
