@@ -229,6 +229,7 @@ header .container{ width: 90%; }
 	align-items: center;
 	padding-top: 64px;
 }
+.ilustrasi{ width: 80%; }
 
 .ptn{ 
 	margin: 64px 0;
@@ -338,6 +339,10 @@ footer .btn-icon img{
 }
 
 /*responsive*/
+@media screen and (min-height: 650px){
+	.banner{ height: 650px; }
+	.ilustrasi{ width: 60% }
+}
 /*tablet*/
 @media screen and (max-width: 770px){
 	.container{ width: 90%; }
@@ -373,8 +378,4 @@ footer .btn-icon img{
 	.formulir{ margin: 32px 0; }
 	footer li{ margin-left: 16px; }
 	.modal .card{ width: 100%; }
-}
-
-@media screen and (min-height: 650px){
-	.banner{ background-size: 70%; }
 }
